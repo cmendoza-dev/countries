@@ -1,7 +1,7 @@
 <template>
-  <div class="flex h-screen bg-gray-100">
+  <div class="flex flex-col md:flex-row h-screen bg-gray-100">
     <Sidebar />
-    <div class="flex-1 overflow-auto p-6 ">
+    <div class="w-full  flex-1 overflow-auto p-6 md:pt-2">
       <!-- Buscar -->
       <div
         class="mx-auto flex justify-between items-center px-4 py-2 mb-4 shadow-md border-b-2 border-gray-300 bg-white rounded-full">
@@ -21,6 +21,7 @@
           Buscar
         </button>
       </div>
+      
       <!-- Modal - Filtrar por continentes -->
       <div v-if="showModal" class="fixed mb-6 bg-white shadow-lg rounded-3xl px-6 py-4">
         <div class="">
